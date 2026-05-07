@@ -1,0 +1,5 @@
+# Obsidian 编辑器配置（不共享）
+.obsidian/
+
+# macOS 系统文件
+.DS_Store
