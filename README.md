@@ -89,3 +89,4 @@ rules/
 | 5 | 从第一性原理思考 Agentic Engineering | 魏依承/腾讯云开发者 | Agentic Engineering |
 | 6 | RAG已死？不，是GREP回归了！ | 何理扬/腾讯云开发者 | Context, 产品 |
 | 7 | 程序员越早想通这些越好 | 吴正伟/腾讯云开发者 | 编码准则 |
+| 8 | AI Infra 其实没有多少新东西 | 腾讯云开发者 | AI基金/硬件栈 |
