@@ -40,13 +40,12 @@
 
 以下规则在两边都有，**以 ECC 为准**（因为 ECC 是系统级加载）：
 
-| 知识库规则 | ECC 对应 | 处理 |
-|-----------|---------|------|
-| 不硬编码凭证 | `common/security.md` | ❌ 重复，用 ECC |
-| 80% 覆盖测试 | `common/testing.md` | ❌ 重复，用 ECC |
-| 先写测试（TDD） | `common/testing.md` + `tdd-guide` agent | ❌ 重复，用 ECC |
-| KISS/DRY/YAGNI | `common/coding-style.md` | ❌ 重复，用 ECC |
-| 错误处理 | `common/coding-style.md` | ❌ 重复，用 ECC |
+| 知识库规则          | ECC 对应                                  | 处理         |
+| -------------- | --------------------------------------- | ---------- |
+| 80% 覆盖测试       | `common/testing.md`                     | ❌ 重复，用 ECC |
+| 先写测试（TDD）      | `common/testing.md` + `tdd-guide` agent | ❌ 重复，用 ECC |
+| KISS/DRY/YAGNI | `common/coding-style.md`                | ❌ 重复，用 ECC |
+| 错误处理           | `common/coding-style.md`                | ❌ 重复，用 ECC |
 
 ### 互补的规则
 
