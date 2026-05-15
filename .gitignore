@@ -1,5 +1,24 @@
-# Obsidian 编辑器配置（不共享）
+# Obsidian
 .obsidian/
 
-# macOS 系统文件
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+
+# pytest
+.pytest_cache/
+
+# Data files (generated, large)
+*.pkl
+data/cache/
+data/results/
+data/backtest_results/
+data/logs/

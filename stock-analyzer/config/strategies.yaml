@@ -1,0 +1,30 @@
+# Strategy parameter configuration
+# All values can be overridden at runtime
+
+momentum:
+  ma_period: 20       # MA ratio period for relative momentum
+  roc_period: 20      # Rate of change period for relative momentum
+
+congestion:
+  lookback: 5         # Days to compute baseline averages
+
+fusion:
+  lookback: 10        # Absolute momentum filter window
+  trending_weights: [0.80, 0.20]  # [momentum, congestion] momentum-heavy in trends
+  ranging_weights: [0.60, 0.40]   # [momentum, congestion] balanced in ranges
+
+position_sizing:
+  lookback: 20        # Position sizing momentum window (market absolute momentum)
+
+backtest:
+  top_n: 3            # Sectors to hold in ranging markets
+  top_n_trending: 2   # Sectors to hold in trending markets
+  rebalance_freq: 5   # Rebalance every N trading days
+  target_excess: 10.0 # Target excess return over 沪深300 (%)
+  max_iterations: 10  # Max optimization iterations per window
+  window_months: 2    # Window size (months)
+  num_windows: 6      # Number of windows
+  regime_adaptive: true # Use different top_n based on market regime
+
+daily:
+  top_k: 20           # Number of hot sectors to analyze
