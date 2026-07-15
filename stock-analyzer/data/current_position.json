@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-15",
+  "holdings": {
+    "562500": {
+      "name": "机器人ETF",
+      "amount": 1460,
+      "sector": ""
+    },
+    "159633": {
+      "name": "工业ETF",
+      "amount": 973,
+      "sector": ""
+    },
+    "159865": {
+      "name": "化工ETF",
+      "amount": 487,
+      "sector": ""
+    }
+  },
+  "cash": 1080,
+  "total": 4000,
+  "last_rebalance_date": "2026-05-15"
+}

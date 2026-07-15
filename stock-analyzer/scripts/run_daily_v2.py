@@ -130,12 +130,18 @@ def fetch_today_index() -> dict:
 # ---------------------------------------------------------------------------
 
 def run_pipeline(date_str: str, warmup_days: int = 250,
-                 initial_capital: float = 5000.0) -> Optional[dict]:
+                 initial_capital: float = 5000.0,
+                 auto_update: bool = True) -> Optional[dict]:
     """Run ForwardExecutor through date_str and return the last day's record.
     
     warmup_days: 预热天数，用于计算信号指标。默认250天。
     initial_capital: 初始资金，默认5000元。
+    auto_update: 自动更新数据到最新。默认True。
     """
+    # 自动更新最新数据
+    if auto_update:
+        _update_data_live()
+    
     sectors, index_data = load_data()
 
     target_dt = pd.Timestamp(date_str)
